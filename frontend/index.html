@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JWT</title>
+</head>
+<body style="display: flex; flex-direction: column; align-items: center; margin-top: 40px; background-color: rgb(203, 253, 253);">
+    <h1>Аутентификации</h1>
+
+    <div>
+        <h2 style="display: flex; justify-content: center; ">Регистрация</h2>
+        <form id="registerForm" style="display: flex; flex-direction: column; align-items: center;">
+            <input type="text" id="registerUsername" placeholder="Username" required style="padding: 10px; ">  <br>
+            <input type="password" id="registerPassword" placeholder="Password" required style="padding: 10px;"> <br>
+            <button type="submit" class="btn" >Зарегистрироваться</button>
+        </form>
+        <p id="registerMessage"></p>
+    </div>
+
+    <div >
+        <h2 style="display: flex; justify-content: center; " >Вход</h2>
+        <form id="loginForm" style="display: flex; flex-direction: column; align-items: center; ;" >
+            <input type="text" id="loginUsername" placeholder="Username" required style="padding: 10px;">
+            <input type="password" id="loginPassword" placeholder="Password" required style="padding: 10px;">
+            <button type="submit" class="btn">Войти</button>
+        </form>
+        <p id="loginMessage"></p>
+    </div>
+
+    <div>
+        <h2>Доступ к данным</h2>
+        <button id="fetchProtectedData">Get data</button>
+        <p id="protectedData"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
